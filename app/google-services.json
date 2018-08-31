@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "393233409619",
+    "firebase_url": "https://mojo-94f9f.firebaseio.com",
+    "project_id": "mojo-94f9f",
+    "storage_bucket": "mojo-94f9f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393233409619:android:ceaf3b572891332d",
+        "android_client_info": {
+          "package_name": "com.mojostudios.mojopay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393233409619-iuq9oagoi59dacg32eruv7ib04o7p07b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mojostudios.mojopay",
+            "certificate_hash": "d35ff17485a9e34484a8fa0f0de916ef83007bc4"
+          }
+        },
+        {
+          "client_id": "393233409619-l29j79390l04kdeesrualgqcm7lr42v5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX2ZI-W8EZvKOhDZDH-9ds2MbpcMm9abQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393233409619-l29j79390l04kdeesrualgqcm7lr42v5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
