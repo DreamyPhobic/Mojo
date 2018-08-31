@@ -1,4 +1,4 @@
-package com.example.harshgupta.balanceit;
+package com.mojostudios.mojopay;
 
 import android.support.v7.app.AppCompatActivity;
 

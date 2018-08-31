@@ -1,4 +1,4 @@
-package com.example.harshgupta.balanceit;
+package com.mojostudios.mojopay;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;

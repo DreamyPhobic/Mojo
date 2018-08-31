@@ -1,4 +1,4 @@
-package com.example.harshgupta.balanceit;
+package com.mojostudios.mojopay;
 
 /**
  * Created by Harsh Gupta on 19-Mar-18.

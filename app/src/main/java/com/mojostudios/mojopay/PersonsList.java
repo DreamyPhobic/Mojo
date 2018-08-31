@@ -1,4 +1,4 @@
-package com.example.harshgupta.balanceit;
+package com.mojostudios.mojopay;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -10,10 +10,9 @@ import android.support.v7.widget.Toolbar;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
 import android.view.View;
+import com.mojostudios.mojopay.R;
 
 import java.util.List;
-
-import javax.security.auth.Subject;
 
 public class PersonsList extends AppCompatActivity {
     private RecyclerView mRecyclerView;

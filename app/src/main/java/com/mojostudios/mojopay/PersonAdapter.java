@@ -1,4 +1,4 @@
-package com.example.harshgupta.balanceit;
+package com.mojostudios.mojopay;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.mojostudios.mojopay.R;
 import com.squareup.picasso.Picasso;
 
 import java.io.File;
