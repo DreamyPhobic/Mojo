@@ -79,7 +79,7 @@ public class MainActivity extends Activity {
                     txtSpeechInput.setText(result.get(0));
                     String input = result.get(0);
                     if (Pattern.matches("show list", input)) {
-                        Intent intent = new Intent(this, PersonsList.class);
+                        Intent intent = new Intent(this, TabActivity.class);
                         startActivity(intent);
                     } else if (Pattern.matches("add [0-9]+ [a-zA-Z]+", input)) {
                         String delimiter =  "\\s";
