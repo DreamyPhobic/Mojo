@@ -85,14 +85,14 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder
         final Person Person = mPersonList.get(position);
         holder.PersonNameTxtV.setText(Person.getName());
         holder.PersonTotalTxtV.setText(String.valueOf(Person.getTotal()));
-        if(!Person.getImage().isEmpty()){
-            File file = new File("/storage/emulated/0/DMC_Images"+Person.getName());
-            if(!file.exists()){
-                Picasso.with(mContext).load(Person.getImage()).placeholder(R.mipmap.ic_launcher).into(holder.PersonImageImgV);
-            }
-            else
-                Picasso.with(mContext).load(file).placeholder(R.mipmap.ic_launcher).into(holder.PersonImageImgV);
-        }
+//        if(!Person.getImage().isEmpty()){
+//            File file = new File("/storage/emulated/0/DMC_Images"+Person.getName());
+//            if(!file.exists()){
+//                Picasso.with(mContext).load(Person.getImage()).placeholder(R.mipmap.ic_launcher).into(holder.PersonImageImgV);
+//            }
+//            else
+//                Picasso.with(mContext).load(file).placeholder(R.mipmap.ic_launcher).into(holder.PersonImageImgV);
+//        }
         //listen to single view layout click
         holder.layout.setOnClickListener(new View.OnClickListener() {
             @Override

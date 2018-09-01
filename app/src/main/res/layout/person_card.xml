@@ -22,7 +22,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:padding="8dp"
-            android:src="@mipmap/ic_launcher" />
+            android:src="@drawable/blank_dp_small" />
 
         <TextView
             android:id="@+id/tv_personName"
