@@ -50,5 +50,11 @@ public class Page2Fragment extends Fragment {
         mRecyclerView.setAdapter(adapter);
         Log.d("totalEntries",String.valueOf(dbHelper.getallCount()));
     }
-
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if (isVisibleToUser) {
+            getFragmentManager().beginTransaction().detach(this).attach(this).commit();
+        }
+    }
 }

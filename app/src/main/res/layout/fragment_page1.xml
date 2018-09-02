@@ -5,10 +5,70 @@
     android:layout_height="match_parent"
     android:background="#FFCC80">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="This is page 1" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <TextView
+            android:id="@+id/tv_pg2_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/et_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-95dp"
+            android:fontFamily="sans-serif"
+            android:text="Add Account"
+            android:textSize="34sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="232dp"
+            android:layout_height="59dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_amount"
+            android:layout_width="230dp"
+            android:layout_height="56dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="186dp"
+            android:ems="10"
+            android:hint="Amount"
+            android:inputType="numberSigned" />
+
+        <Button
+            android:id="@+id/b_add"
+            style="@style/FirebaseUI.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="155dp"
+            android:onClick="add"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/b_speech_name"
+            android:layout_width="60dp"
+            android:layout_height="57dp"
+
+            android:layout_alignTop="@+id/et_name"
+            android:layout_toEndOf="@+id/et_name"
+            android:background="@drawable/mic" />
+
+        <Button
+            android:id="@+id/b_speech_amount"
+            android:layout_width="64dp"
+            android:layout_height="58dp"
+            android:layout_alignTop="@+id/et_amount"
+            android:layout_toEndOf="@+id/et_name"
+            android:background="@drawable/mic" />
+    </RelativeLayout>
 </FrameLayout>

@@ -51,7 +51,7 @@ public class SplashActivity extends AppCompatActivity {
                         new AuthUI.IdpConfig.GoogleBuilder().build());
 
                 if (auth.getCurrentUser() != null) { //If user is signed in
-                    Intent intentMain=new Intent(SplashActivity.this,MainActivity.class);
+                    Intent intentMain=new Intent(SplashActivity.this,TabActivity.class);
                     startActivity(intentMain);
                     overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 } else {
@@ -84,7 +84,7 @@ public class SplashActivity extends AppCompatActivity {
             IdpResponse response = IdpResponse.fromResultIntent(data);
             if(resultCode == Activity.RESULT_OK){
                 showSnackbar(R.string.signed_in);
-                Intent intentMain=new Intent(SplashActivity.this,MainActivity.class);
+                Intent intentMain=new Intent(SplashActivity.this,TabActivity.class);
                 startActivity(intentMain);
                 finish();
                 return;
