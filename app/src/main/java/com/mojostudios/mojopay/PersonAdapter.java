@@ -94,14 +94,7 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder
 //                Picasso.with(mContext).load(file).placeholder(R.mipmap.ic_launcher).into(holder.PersonImageImgV);
 //        }
         //listen to single view layout click
-        holder.layout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent goToDetail = new Intent(mContext, DetailActivity.class);
-                goToDetail.putExtra("USER_ID",Person.getID());
-                mContext.startActivity(goToDetail);
-            }
-        });
+
 
 
     }
