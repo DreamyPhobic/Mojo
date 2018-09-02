@@ -30,6 +30,7 @@
             android:name=".TabActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".ProfileActivity"></activity>
     </application>
 
 </manifest>
