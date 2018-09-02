@@ -6,16 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".ProfileActivity">
 
-    <ImageView
+    <com.mikhaellopez.circularimageview.CircularImageView
         android:id="@+id/iv_pic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="56dp"
-        app:srcCompat="@drawable/blank_dp_small"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="71dp" />
+        android:layout_marginTop="128dp"
+        android:src="@drawable/blank_dp_small"
+        app:civ_border_color="#EEEEEE"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#8BC34A"
+        app:civ_shadow_radius="10" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_pic"-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="132dp"-->
+        <!--android:scaleType="fitXY"-->
+        <!--app:srcCompat="@drawable/blank_dp_small"-->
+        <!--tools:layout_editor_absoluteX="128dp"-->
+        <!--tools:layout_editor_absoluteY="71dp" />-->
 
     <TextView
         android:id="@+id/tv_profile_name"
@@ -23,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="231dp"
+        android:layout_marginBottom="171dp"
         android:text="Add Name"
         android:textSize="30sp"
         tools:layout_editor_absoluteX="16dp"
@@ -35,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="197dp"
+        android:layout_marginBottom="141dp"
         android:text="Add a email address"
         android:textSize="16sp" />
 
@@ -45,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="158dp"
+        android:layout_marginBottom="108dp"
         android:text="Add Mobile number"
         android:textSize="16sp" />
 
@@ -53,7 +68,7 @@
         android:id="@+id/imageButton"
         android:layout_width="42dp"
         android:layout_height="41dp"
-        android:layout_alignBottom="@+id/iv_pic"
-        android:layout_alignEnd="@+id/iv_pic"
+        android:layout_alignEnd="@+id/tv_profile_name"
+        android:layout_centerVertical="true"
         app:srcCompat="@android:drawable/ic_menu_camera" />
 </RelativeLayout>
