@@ -21,6 +21,12 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
+import org.w3c.dom.Text;
 
 public class TabActivity extends AppCompatActivity implements SensorEventListener,NavigationView.OnNavigationItemSelectedListener  {
     private SensorManager sensorManager;
@@ -29,6 +35,7 @@ public class TabActivity extends AppCompatActivity implements SensorEventListene
     private TabLayout tabLayout;
     private DrawerLayout drawer;
     private NavigationView navigationView;
+    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
 
     // Titles of the individual pages (displayed in tabs)
@@ -74,6 +81,13 @@ public class TabActivity extends AppCompatActivity implements SensorEventListene
 
         navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        TextView navName=navigationView.findViewById(R.id.tv_nav_name);
+        TextView navDetail=navigationView.findViewById(R.id.tv_nav_detail);
+        navName.setText(user.getDisplayName());
+        navDetail.setText(user.getEmail());
+        if(user.getEmail()==null){
+            navDetail.setText(user.getPhoneNumber());
+        }
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         lastUpdate = System.currentTimeMillis();
     }
@@ -110,7 +124,7 @@ public class TabActivity extends AppCompatActivity implements SensorEventListene
     }
 
     public void GoToProfile(View view){
-        Intent intent = new Intent(this, MainProfileActivity.class);
+        Intent intent = new Intent(this, ProfileActivity.class);
         startActivity(intent);
     }
 
@@ -126,7 +140,7 @@ public class TabActivity extends AppCompatActivity implements SensorEventListene
         } else if (id == R.id.nav_gallery) {
            mViewPager.setCurrentItem(1);
         } else if (id == R.id.profile) {
-            Intent intent = new Intent(this, MainProfileActivity.class);
+            Intent intent = new Intent(this, ProfileActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_share) {
 
