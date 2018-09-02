@@ -40,8 +40,8 @@ public class TabActivity extends AppCompatActivity implements SensorEventListene
 
     // Titles of the individual pages (displayed in tabs)
     private final String[] PAGE_TITLES = new String[] {
-            "Page 1",
-            "Page 2",
+            "Add List",
+            "See List",
     };
 
     // The fragments that are used as the individual pages
@@ -142,8 +142,6 @@ public class TabActivity extends AppCompatActivity implements SensorEventListene
         } else if (id == R.id.profile) {
             Intent intent = new Intent(this, ProfileActivity.class);
             startActivity(intent);
-        } else if (id == R.id.nav_share) {
-
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
