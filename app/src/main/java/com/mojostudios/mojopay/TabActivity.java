@@ -2,6 +2,7 @@ package com.mojostudios.mojopay;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -19,6 +20,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class TabActivity extends AppCompatActivity implements SensorEventListener,NavigationView.OnNavigationItemSelectedListener  {
     private SensorManager sensorManager;
@@ -107,6 +109,11 @@ public class TabActivity extends AppCompatActivity implements SensorEventListene
         return super.onOptionsItemSelected(item);
     }
 
+    public void GoToProfile(View view){
+        Intent intent = new Intent(this, MainProfileActivity.class);
+        startActivity(intent);
+    }
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -118,9 +125,10 @@ public class TabActivity extends AppCompatActivity implements SensorEventListene
             mViewPager.setCurrentItem(0);
         } else if (id == R.id.nav_gallery) {
            mViewPager.setCurrentItem(1);
+        } else if (id == R.id.profile) {
+            Intent intent = new Intent(this, MainProfileActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
 
         }
 
