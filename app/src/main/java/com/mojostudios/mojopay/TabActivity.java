@@ -7,6 +7,7 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v13.app.FragmentPagerAdapter;
@@ -23,6 +24,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.firebase.ui.auth.AuthUI;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -140,6 +144,18 @@ public class TabActivity extends AppCompatActivity implements SensorEventListene
         } else if (id == R.id.profile) {
             Intent intent = new Intent(this, ProfileActivity.class);
             startActivity(intent);
+        }
+        else if(id==R.id.nav_logout){
+            AuthUI.getInstance()
+                    .signOut(this)
+                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                        public void onComplete(@NonNull Task<Void> task) {
+                            Intent intent = new Intent(TabActivity.this, SplashActivity.class);
+                            startActivity(intent);
+                            finish();
+                        }
+                    });
+
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
