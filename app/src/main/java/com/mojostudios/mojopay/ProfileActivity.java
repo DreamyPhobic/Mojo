@@ -22,6 +22,7 @@ import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.mikhaellopez.circularimageview.CircularImageView;
 
 import org.w3c.dom.Text;
 
@@ -38,7 +39,7 @@ public class ProfileActivity extends AppCompatActivity {
     private TextView email;
     private TextView mobile;
     private ImageButton changePic;
-    private ImageView pic;
+    private CircularImageView pic;
     FirebaseUser user =FirebaseAuth.getInstance().getCurrentUser();
     String userChoosenTask;
     private static final int REQUEST_CAMERA = 101;
@@ -53,7 +54,7 @@ public class ProfileActivity extends AppCompatActivity {
         email=findViewById(R.id.tv_profile_email);
         mobile=findViewById(R.id.tv_profile_mn);
         changePic=findViewById(R.id.imageButton);
-        pic=findViewById(R.id.iv_pic);
+        pic = (CircularImageView)findViewById(R.id.iv_pic);
         changePic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -141,6 +142,7 @@ public class ProfileActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
+
         pic.setImageBitmap(bm);
     }
     private void onCaptureImageResult(Intent data) {
@@ -160,6 +162,7 @@ public class ProfileActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         pic.setImageBitmap(thumbnail);
     }
 
