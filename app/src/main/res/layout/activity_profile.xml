@@ -7,7 +7,7 @@
     tools:context=".ProfileActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/iv_pic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -53,7 +53,7 @@
         android:id="@+id/imageButton"
         android:layout_width="42dp"
         android:layout_height="41dp"
-        android:layout_alignBottom="@+id/imageView2"
-        android:layout_alignEnd="@+id/imageView2"
+        android:layout_alignBottom="@+id/iv_pic"
+        android:layout_alignEnd="@+id/iv_pic"
         app:srcCompat="@android:drawable/ic_menu_camera" />
 </RelativeLayout>
