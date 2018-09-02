@@ -81,8 +81,8 @@ public class TabActivity extends AppCompatActivity implements SensorEventListene
 
         navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        TextView navName=navigationView.findViewById(R.id.tv_nav_name);
-        TextView navDetail=navigationView.findViewById(R.id.tv_nav_detail);
+        TextView navName=navigationView.getHeaderView(0).findViewById(R.id.tv_nav_name);
+        TextView navDetail=navigationView.getHeaderView(0).findViewById(R.id.tv_nav_detail);
         navName.setText(user.getDisplayName());
         navDetail.setText(user.getEmail());
         if(user.getEmail()==null){
