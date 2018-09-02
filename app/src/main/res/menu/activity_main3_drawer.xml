@@ -16,6 +16,10 @@
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_send"
             android:title="S e e  L i s t" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_send"
+            android:title="L o g  O u t" />
     </group>
 
 </menu>
