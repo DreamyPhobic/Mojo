@@ -15,7 +15,7 @@ gradle-app.setting
 
 ## Intelli J ##
 *.iml
-.idea/
+.idea/*
 
 
 ## Firebase App configuration ##
