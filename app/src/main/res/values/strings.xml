@@ -58,4 +58,9 @@
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
+
+
+    <string name="delete_message">Are you sure you want to delete?</string>
+    <string name="yes">Yeah,pretty sure!</string>
+    <string name="cancel">Nope</string>
 </resources>
