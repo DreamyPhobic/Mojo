@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Mojo.iml" filepath="$PROJECT_DIR$/Mojo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/VoiceApps.iml" filepath="$PROJECT_DIR$/VoiceApps.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

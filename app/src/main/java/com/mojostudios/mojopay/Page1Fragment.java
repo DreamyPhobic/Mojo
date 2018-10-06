@@ -3,7 +3,6 @@ package com.mojostudios.mojopay;
 import android.app.Fragment;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.util.Log;
@@ -14,10 +13,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
-import java.util.regex.Pattern;
 
 import static android.app.Activity.RESULT_OK;
 import static java.lang.Integer.parseInt;

@@ -10,7 +10,6 @@ import android.support.v7.widget.Toolbar;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
 import android.view.View;
-import com.mojostudios.mojopay.R;
 
 import java.util.List;
 
