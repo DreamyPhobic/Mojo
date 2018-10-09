@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mojo</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="hello_world">¡Hola Mundo!</string>
+    <string name="speech_prompt">Di algo…</string>
+    <string name="speech_not_supported">¡Lo siento! Su dispositivo no admite la entrada de voz</string>
+    <string name="tap_on_mic">Toque en el micrófono para hablar</string>
+    <string name="title_activity_main2">Los anuncios personales</string>
+
+    <string name="action_sign_in_short">Registro</string>
+    <string name="email">Electrónico</string>
+    <string name="minimum_password">Contraseña demasiado corta, ingrese un mínimo de 6 caracteres</string>
+    <string name="auth_failed">Falló la autenticación, revise su correo electrónico y contraseña o regístrese</string>
+    <string name="change_email">Cambiar electrónico</string>
+    <string name="change_password">Cambia la contraseña</string>
+    <string name="send_password_reset_email">Enviar contraseña restablecer correo electrónico</string>
+    <string name="remove_user">Eliminar usuario</string>
+    <string name="new_pass">Nueva contraseña</string>
+    <string name="title_activity_profile">Base de fuego</string>
+    <string name="title_activity_login">Registrarse</string>
+    <string name="hint_email">Electrónico</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_name">Nombre completo</string>
+    <string name="btn_login">INICIAR SESIÓN</string>
+    <string name="btn_link_to_register">¿No es un miembro? ¡Regístrese en Firebase ahora!</string>
+    <string name="btn_link_to_login">Ya registrado. Inicia sesión</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="btn_forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="btn_reset_password">Restablecer la contraseña</string>
+    <string name="btn_back">Espalda</string>
+    <string name="hint_new_email">Nuevo electrónico</string>
+    <string name="btn_change">Cambio</string>
+    <string name="btn_send">Enviar</string>
+    <string name="btn_remove">retirar</string>
+    <string name="btn_sign_out">Desconectar</string>
+    <string name="lbl_forgot_password">¿Se te olvidó tu contraseña?</string>
+    <string name="forgot_password_msg">Solo necesitamos su ID de correo electrónico registrada para enviarle las instrucciones para restablecer su contraseña.</string>
+    Strings related to login
+    <string name="prompt_email">Electrónico</string>
+    <string name="prompt_password">Contraseña (opcional)</string>
+    <string name="action_sign_in">Ingresa o Registro</string>
+    <string name="error_invalid_email">Esta dirección de correo electrónico no es válida</string>
+    <string name="error_invalid_password">Esta contraseña es demasiado corta</string>
+    <string name="error_incorrect_password">Esta contraseña es incorrecta</string>
+    <string name="error_field_required">este campo es requerido</string>
+    <string name="permission_rationale">\"Los permisos de contactos son necesarios para proporcionar completamientos de correo electrónico\".</string>
+    <string name="unknown_sign_in_response">Respuesta desconocida</string>
+    <string name="unknown_error">Error desconocido</string>
+    <string name="sign_in_cancelled">Registrarse cancelado</string>
+    <string name="no_internet_connection">No se encontró Internet</string>
+    <string name="signed_in">Inicia sesión exitosamente</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="navigation_drawer_open">Abrir el cajon de navegacion</string>
+    <string name="navigation_drawer_close">Cerrar el cajon de navegacion</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Encabezado de navegación</string>
+
+
+    <string name="delete_message">¿Estas seguro que quieres borrarlo?</string>
+    <string name="yes">Sí, bastante seguro!</string>
+    <string name="cancel">No</string>
+</resources>
